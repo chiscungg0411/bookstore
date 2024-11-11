@@ -35,12 +35,14 @@ body {
 }
 
 .menu span {
+    transition: background-color 0.3s;
     cursor: pointer;
     color: #4c907a;
     font-weight: bold;
 }
 
 .menu span:hover {
+    transition: background-color 0.3s;
     color: #00b894;
 }
 
@@ -50,6 +52,7 @@ body {
 }
 
 .noidung-roixuong {
+    transition: background-color 0.3s;
     display: none;
     position: absolute;
     background-color: #fff;
@@ -61,6 +64,7 @@ body {
 }
 
 .noidung-roixuong span {
+    transition: background-color 0.3s;
     color: #4c907a;
     padding: 10px 20px;
     cursor: pointer;
@@ -70,12 +74,16 @@ body {
 }
 
 .noidung-roixuong span:hover {
+    transition: background-color 0.3s;
     background-color: #00b894;
     color: #fff;
 }
 
 .menu-roixuong:hover .noidung-roixuong {
     display: flex;
+}
+
+span:hover {
 }
 
 .tuy-chon-nguoi-dung {
@@ -126,6 +134,7 @@ body {
 }
 
 .dangky-dangnhap .nutdangky {
+    transition: background-color 0.3s;
     background-color: #fff;
     color: #4c907a;
     border-color: #fff;
@@ -133,10 +142,12 @@ body {
 }
 
 .dangky-dangnhap .nutdangky:hover {
+    transition: background-color 0.3s;
     background-color: #eaeaea;
 }
 
 .dangky-dangnhap .nutdangnhap {
+    transition: background-color 0.3s;
     background-color: #4c907a;
     color: #fff;
     border-color: #4c907a;
@@ -144,6 +155,7 @@ body {
 }
 
 .dangky-dangnhap .nutdangnhap:hover {
+    transition: background-color 0.3s;
     background-color: #00b894;
     border-color:#00b894 ;
 }
@@ -211,7 +223,7 @@ h2 {
     padding: 10px;
     border-radius: 20px;
     flex-shrink: 0; /* Ngăn các thẻ sách co lại khi thiếu không gian */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
 
 .sach p {
@@ -248,4 +260,8 @@ h2 {
     margin-bottom: 10px;
     display: inline-block;
     font-size: 15px;
+}
+
+.menu-roixuong:active, .noidung-roixuong:active, .sach:active {
+    transform: scale(0.98);
 }
