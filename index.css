@@ -201,6 +201,7 @@ h2 {
 }
 
 .sach {
+    transition: background-color 0.3s;
     width: 200px; /* Chiều rộng cố định cho mỗi sách */
     position: relative;
     text-align: center;
@@ -217,6 +218,7 @@ h2 {
     font-weight: bold;
     color: #fff;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .sach:hover {

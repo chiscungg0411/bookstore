@@ -1,0 +1,149 @@
+html {
+    font-family: 'Inter';
+}
+.khung {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('ảnh/Background-mo.webp');
+    
+}
+
+.khung-dang-ky, .khung-dang-nhap {
+    background: #00b894;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 5px 5px 5px #00000094;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-shadow: 0.5px 0.5px 0.5px #000;
+    font-weight: bold;
+}
+
+a {
+    color: #fff;
+}
+
+i {
+    color:#4c907a
+}
+
+i:hover {
+    color:#00b894;
+    
+}
+
+button i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #fff;
+    color: #000;
+    width: 100%; /* Đảm bảo chiều ngang bằng nhau */
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px #00000085;
+}
+
+
+.khung-mat-khau {
+    position: relative;
+}
+
+.nut-hien-mat-khau {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: #888;
+}
+
+button {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #4c907a;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #00000085;
+}
+
+button:hover {
+    background-color: #4c907a;
+    color: #fff;
+}
+
+.nut-mang-xa-hoi {
+    margin: 10px 0;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nut-mang-xa-hoi:hover {
+    opacity: 0.9;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.facebook:hover {
+    background-color: #fff;
+    color: #3b5998;
+}
+
+.facebook:hover i {
+    color: #3b5998;
+} 
+
+.google {
+    background-color: #db4437;
+}
+
+.google:hover {
+    background-color: #fff;
+    color:#db4437;
+}
+
+.google:hover i {
+    color: #db4437;
+}
+
+i:active, button:active, .nut-mang-xa-hoi:active {
+    transform: scale(0.98);
+}
