@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #fff;
+    font-family: 'Inter';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #f2f2f2;
+}
+
+.thanh-dieu-huong {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    color: #4c907a;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu span {
+    cursor: pointer;
+    color: #4c907a;
+    font-weight: bold;
+}
+
+.menu span:hover {
+    color: #00b894;
+}
+
+.menu-roixuong {
+    position: relative;
+    display: inline-block;
+}
+
+.noidung-roixuong {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.noidung-roixuong span {
+    color: #4c907a;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+
+}
+
+.noidung-roixuong span:hover {
+    background-color: #00b894;
+    color: #fff;
+}
+
+.menu-roixuong:hover .noidung-roixuong {
+    display: flex;
+}
+
+.tuy-chon-nguoi-dung {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color:#4c907a;
+    font-weight: bold;
+}
+
+.tuy-chon-nguoi-dung input:hover{
+    border-color:#00b894;
+}
+
+.tuy-chon-nguoi-dung input {
+    padding: 5px;
+    border: 2px solid #4c907a;
+    border-radius: 10px;
+}
+
+.tuy-chon-nguoi-dung button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+    color:#4c907a;
+}
+
+.tuy-chon-nguoi-dung button:hover {
+    color: #00b894;
+}
+
+.dangky-dangnhap {
+    display: flex;
+    gap: 10px;
+}
+
+.dangky-dangnhap .nutdangky, .dangky-dangnhap .nutdangnhap {
+    font-family: 'Inter';
+    padding: 4px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dangky-dangnhap .nutdangky {
+    background-color: #fff;
+    color: #4c907a;
+    border-color: #fff;
+    border: 2px solid #4c907a;
+}
+
+.dangky-dangnhap .nutdangky:hover {
+    background-color: #eaeaea;
+}
+
+.dangky-dangnhap .nutdangnhap {
+    background-color: #4c907a;
+    color: #fff;
+    border-color: #4c907a;
+    border: 2px solid #4c907a;
+}
+
+.dangky-dangnhap .nutdangnhap:hover {
+    background-color: #00b894;
+    border-color:#00b894 ;
+}
+
+.gioi-thieu {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('ảnh/Background.webp');
+    background-size: cover;
+    background-position: center;
+    color: #f2f2f2;
+}
+
+.gioi-thieu h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px #181818;
+}
+
+.sach-chung {
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    color: #4c907a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.danh-sach-sach {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto; /* Kích hoạt thanh cuộn ngang */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    scrollbar-width: thin; /* Thanh cuộn mỏng cho Firefox */
+    scrollbar-color: #3b3b3b #fff; /* Màu thanh cuộn cho Firefox */
+}
+
+.danh-sach-sach::-webkit-scrollbar {
+    height: 8px; /* Độ dày của thanh cuộn ngang trên trình duyệt Webkit */
+}
+
+.danh-sach-sach::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b; /* Màu của thanh cuộn */
+    border-radius: 4px;
+}
+
+.danh-sach-sach::-webkit-scrollbar-track {
+    background: #fff; /* Màu nền của thanh cuộn */
+}
+
+.sach {
+    width: 200px; /* Chiều rộng cố định cho mỗi sách */
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4c907a;
+    padding: 10px;
+    border-radius: 20px;
+    flex-shrink: 0; /* Ngăn các thẻ sách co lại khi thiếu không gian */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sach p {
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+
+.sach:hover {
+    background-color: #00b894;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+.sach img {
+    width: 180px;
+    height: 260px; /* Chiều cao cố định cho ảnh */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1.5px #00000038;
+}
+
+
+
+.nhan-mien-phi {
+    background-color: #fff;
+    color: #274020;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 15px;
+}
