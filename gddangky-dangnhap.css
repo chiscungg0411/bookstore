@@ -15,7 +15,7 @@ html {
 }
 
 .khung-dang-ky, .khung-dang-nhap {
-    background: #00b894;
+    background: #00b894a8;
     color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -23,6 +23,13 @@ html {
     max-width: 90%;
     text-align: center;
     box-shadow: 5px 5px 5px #00000094;
+}
+
+
+.logo img {
+    margin-top:15px;
+    width: 50px;
+    text-align: center;
 }
 
 h2 {
@@ -94,15 +101,17 @@ button {
     border-radius: 4px;
     color: #4c907a;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s ease;;
     font-weight: bold;
     box-shadow: 2px 2px 2px #00000085;
 }
 
 button:hover {
-    background-color: #4c907a;
+    background-color: #11111184;
     color: #fff;
+    transform: scale(0.5s);
 }
+
 
 .nut-mang-xa-hoi {
     margin: 10px 0;
@@ -111,11 +120,30 @@ button:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s ease;
 }
+
+.apple {
+    background-color: #000;
+}
+
+.apple:hover {
+    background-color: #fff;
+    color:#000;
+}
+
+.apple i {
+    color:#fff;
+}
+
+.apple:hover i {
+    color: #000;
+}
+
 
 .nut-mang-xa-hoi:hover {
     opacity: 0.9;
+    transform: scale(1.03);
 }
 
 .facebook {
@@ -146,4 +174,14 @@ button:hover {
 
 i:active, button:active, .nut-mang-xa-hoi:active {
     transform: scale(0.98);
+}
+
+a {
+    transition: color 0.4s;
+}
+
+a:hover {
+    opacity: 0.9s;
+    color:#a9a9a9;
+    transition: color 0.5s;
 }

@@ -15,6 +15,11 @@ body {
     color: #f2f2f2;
 }
 
+a {
+    color:#4c907a;
+    text-decoration: none;
+}
+
 .thanh-dieu-huong {
     display: flex;
     justify-content: space-between;
@@ -27,6 +32,14 @@ body {
     font-size: 24px;
     color: #4c907a;
     font-weight: bold;
+    display: block;
+    margin-top: -8px;
+}
+
+.logo img {
+    width: 35px;
+    margin-right: 15px;
+    margin-bottom: -9px;
 }
 
 .menu {
@@ -83,8 +96,6 @@ body {
     display: flex;
 }
 
-span:hover {
-}
 
 .tuy-chon-nguoi-dung {
     display: flex;
@@ -119,6 +130,22 @@ span:hover {
     color: #00b894;
 }
 
+.mua-hang button{
+    display: flex;
+    gap: 5px;
+    color: #4c907a;
+    font-size: 24px;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: color 0.3s;
+}
+
+.mua-hang button:hover {
+    color: #00b894;
+}
 .dangky-dangnhap {
     display: flex;
     gap: 10px;
@@ -185,7 +212,7 @@ span:hover {
 h2 {
     font-size: 28px;
     color: #4c907a;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
@@ -213,7 +240,6 @@ h2 {
 }
 
 .sach {
-    transition: background-color 0.3s;
     width: 200px; /* Chiều rộng cố định cho mỗi sách */
     position: relative;
     text-align: center;
@@ -247,6 +273,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 1px 1px 1px 1.5px #00000038;
 }
+
 
 
 
